@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>multiple-animated-properties-example</title>
+        <style>
+            .box {
+                border: 1px solid black;
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+                transition:
+                    width 2s,
+                    height 2s,
+                    background-color 2s,
+                    rotate 2s;
+            }
+
+            .box:hover {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+                rotate: 180deg;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>The box below combines transitions for: width, height, background-color, rotate. Hover over the box to see these properties animated.</p>
+        <div class="box">Sample</div>
+    </body>
+</html>

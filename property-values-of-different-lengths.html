@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>property-values-of-different-lengths</title>
+        <style>
+            .repeated-value {
+                border: 2px solid red;
+                padding: 50px;
+                background-color: blue;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                height: 50px;
+                transition-property: opacity, left, top, height;
+                transition-duration: 3s, 5s;
+            }
+
+            .truncated-value {
+                border: 2px solid green;
+                padding: 50px;
+                background-color: blue;
+                position: absolute;
+                bottom: 0px;
+                transition: opacity, left;
+                transition-duration: 3s, 5s, 2s, 1s;
+            }
+
+            .repeated-value:hover {
+                opacity: 0.7;
+                left: 50px;
+                top: 100px;
+                height: 150px;
+            }
+
+            .truncated-value:hover {
+                opacity: 0.3;
+                left: 50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="repeated-value"></div>
+        <div class="truncated-value"></div>
+    </body>
+</html>
